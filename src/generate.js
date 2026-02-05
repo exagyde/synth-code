@@ -28,7 +28,7 @@ const REMOTE_MODELS = {
 
 const MODEL_CONFIG = {
     mode: CONFIG.model.mode,
-    remote: REMOTE_MODELS[CONFIG.model.path] ?? "qwen2.5-coder-3b",
+    remote: CONFIG.model.path === "" ? "qwen2.5-coder-3b" : REMOTE_MODELS[CONFIG.model.path],
     local: {
         path: CONFIG.model.path
     }
