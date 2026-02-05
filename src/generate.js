@@ -11,7 +11,7 @@ import CONFIG from "./config.json" with { type: "json" };
 ======================= */
 
 const EXCLUDED_DIR = ["node_modules", ".git", "dist", "build", ".next", "out"];
-const INCLUDED_FILE = [".html", ".js", ".css", ".yml", ".cs"];
+const INCLUDED_FILE = [".html", ".js", ".css", ".yml", ".cs", ".json"];
 const MAX_FILE_CHARS = 9999;
 const OUTPUT_DIR = "./docs";
 
