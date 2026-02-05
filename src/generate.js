@@ -158,7 +158,10 @@ async function summarizeFolder(generator, folder, files, retry = 0) {
     if(!match) summarizeFolder(generator, folder, files, retry+1);
 
     const formatDoc = out[0].generated_text.at(-1).content.replace(/<JSON>\n|\n<\/JSON>/g, "");
-    const formatJSON = JSON.parse(formatDoc.replace(/\\/g, "/"));
+    const formatJSON = JSON.parse(formatDoc.replace(/\\/g, "/")
+        .replace(/^```json\s*/i, '')
+        .replace(/^```\s*/i, '')
+        .replace(/```$/, ''));
     return formatToJSON(formatJSON);
 }
 
