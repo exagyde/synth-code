@@ -1,0 +1,16 @@
+{
+    "context": "",
+    "language": "en-US",
+    "model": {
+        "mode": "remote",
+        "path": ""
+    },
+    "projects": [
+        {
+            "name": "My Project",
+            "path": "./../src",
+            "strategy": "file",
+            "excluded": [""]
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "synth-doc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/generate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/generate.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@huggingface/transformers": "^3.8.1"
+  }
+}
